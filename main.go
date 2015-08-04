@@ -7,7 +7,7 @@ import (
 	"time"
 
 	"github.com/coreos/go-etcd/etcd"
-	"github.com/lintianzhi/easy-etcd"
+	"github.com/lintianzhi/easyetcd"
 )
 
 type A struct {
@@ -52,7 +52,7 @@ func main() {
 
 	client := etcd.NewClient([]string{})
 	var conf Config
-	err := etcdcfg.LoadWithEtcdClient(client, "test", &conf)
+	err := easyetcd.LoadWithEtcdClient(client, "test", &conf)
 	if err != nil {
 		fmt.Println(err)
 		return

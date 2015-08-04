@@ -1,3 +1,3 @@
-package etcdcfg
+package easyetcd
 
 // TODO: load json to etcd

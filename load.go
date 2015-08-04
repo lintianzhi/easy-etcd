@@ -1,4 +1,4 @@
-package etcdcfg
+package easyetcd
 
 import (
 	"flag"
